@@ -1,0 +1,44 @@
+<!--  -->
+
+
+
+<section
+class="relative py-16 text-center bg-cover bg-center"
+style="background-image:url('assets/bridebg4.jpg')">
+
+<div class="absolute inset-0 bg-white/70"></div>
+
+<div class="relative max-w-6xl mx-auto px-6">
+
+<h2 class="text-4xl text-[#0F3D3E] mb-12">
+Wedding Events
+</h2>
+
+<div class="grid md:grid-cols-2 gap-12">
+
+<!-- ✅ STATIC -->
+<div class="bg-white p-8 shadow rounded-xl">
+  <h3 class="text-2xl mb-4">Valima</h3>
+  <p>06 April 2026</p>
+</div>
+
+<!-- ✅ DYNAMIC (NO NGIF NOW) -->
+<div class="bg-white p-8 shadow rounded-xl">
+
+  <h3 class="text-2xl mb-4">Nikah</h3>
+
+  <p>{{event?.nikahDate}}</p>
+  <p>{{event?.day}}</p>
+  <p>{{event?.venue}}</p>
+
+  <a [href]="event?.mapLink" target="_blank">
+    View Location
+  </a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>

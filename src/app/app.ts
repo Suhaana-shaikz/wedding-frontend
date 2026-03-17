@@ -1,9 +1,17 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { Bride } from './componets/bride/bride';
+
+import { Groom } from './componets/groom/groom';
+import { Hero } from './componets/hero/hero';
+import { Location } from './componets/location/location'; 
+
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet ,Bride,Groom,Hero,Location],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
